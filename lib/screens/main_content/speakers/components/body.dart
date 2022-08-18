@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
+import 'package:fronthaus/app_theme.dart';
 import 'package:expandable/expandable.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
-import 'package:sassy_mobile/screens/main_content/speaker_profile/speaker_profile.dart';
-// import 'package:sassy_mobile/widgets/expandable.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
+import 'package:fronthaus/screens/main_content/speaker_profile/speaker_profile.dart';
+// import 'package:fronthaus/widgets/expandable.dart';
 import 'header_for_expandable.dart';
 import 'expanded_for_expandable.dart';
 

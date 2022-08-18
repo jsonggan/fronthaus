@@ -1,4 +1,4 @@
-package com.example.sassy_mobile
+package com.example.fronthaus
 
 import io.flutter.embedding.android.FlutterActivity
 

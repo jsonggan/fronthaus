@@ -1,5 +1,5 @@
 // import 'package:flutter/material.dart';
-// import 'package:sassy_mobile/screens/main_content/event_home/components/speakers_gridview.dart';
+// import 'package:fronthaus/screens/main_content/event_home/components/speakers_gridview.dart';
 
 // class LayoutGridChild extends StatelessWidget {
 //   final SpeakerHomeData data;

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
 import './components/body.dart';
 
 class BookedSessionsPage extends StatelessWidget {

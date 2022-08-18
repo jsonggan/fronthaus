@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-// import 'package:sassy_mobile/models/app_theme.dart';
-// import 'package:sassy_mobile/main.dart';
+import 'package:fronthaus/app_theme.dart';
+// import 'package:fronthaus/models/app_theme.dart';
+// import 'package:fronthaus/main.dart';
 
 class EntryTicket extends StatelessWidget {
   const EntryTicket({Key? key}) : super(key: key);

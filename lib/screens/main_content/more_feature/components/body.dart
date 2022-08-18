@@ -1,18 +1,18 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
-import 'package:sassy_mobile/providers/sponsors_provider.dart';
-import 'package:sassy_mobile/providers/world_time_provider.dart';
-import 'package:sassy_mobile/screens/main_content/sessions/sessions.dart';
-import 'package:sassy_mobile/screens/main_content/speakers/components/body.dart';
-import 'package:sassy_mobile/screens/main_content/speakers/speakers.dart';
-import 'package:sassy_mobile/screens/main_content/sponsors/components/body.dart';
-import 'package:sassy_mobile/screens/main_content/sponsors/sponsors.dart';
-// import 'package:sassy_mobile/models/app_theme.dart';
-// import 'package:sassy_mobile/main.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
+import 'package:fronthaus/providers/sponsors_provider.dart';
+import 'package:fronthaus/providers/world_time_provider.dart';
+import 'package:fronthaus/screens/main_content/sessions/sessions.dart';
+import 'package:fronthaus/screens/main_content/speakers/components/body.dart';
+import 'package:fronthaus/screens/main_content/speakers/speakers.dart';
+import 'package:fronthaus/screens/main_content/sponsors/components/body.dart';
+import 'package:fronthaus/screens/main_content/sponsors/sponsors.dart';
+// import 'package:fronthaus/models/app_theme.dart';
+// import 'package:fronthaus/main.dart';
 
 class MoreFeature extends StatelessWidget {
   const MoreFeature({Key? key}) : super(key: key);

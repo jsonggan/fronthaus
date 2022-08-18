@@ -1,7 +1,7 @@
 import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
+import 'package:fronthaus/app_theme.dart';
 
 class CraftsTicket extends StatelessWidget {
   const CraftsTicket({Key? key}) : super(key: key);

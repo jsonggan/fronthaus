@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/user_provider.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/user_provider.dart';
 import 'package:qr_flutter/qr_flutter.dart';
-// import 'package:sassy_mobile/models/app_theme.dart';
-// import 'package:sassy_mobile/main.dart';
+// import 'package:fronthaus/models/app_theme.dart';
+// import 'package:fronthaus/main.dart';
 
 class QrCode extends StatelessWidget {
   const QrCode({Key? key}) : super(key: key);

@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:sassy_mobile/app_theme.dart';
+import 'package:fronthaus/app_theme.dart';
 
 class CustomSnackBar {
   final String message;

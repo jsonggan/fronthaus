@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/screens/verification_code/components/body.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/screens/verification_code/components/body.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
 
 class VerificationCodePage extends StatelessWidget {
   const VerificationCodePage({Key? key}) : super(key: key);

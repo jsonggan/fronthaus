@@ -3,14 +3,14 @@ import 'dart:async';
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/providers/event_provider.dart';
-import 'package:sassy_mobile/screens/select_event/select_event.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/providers/event_provider.dart';
+import 'package:fronthaus/screens/select_event/select_event.dart';
 
-import 'package:sassy_mobile/widgets/custom_button.dart';
-import 'package:sassy_mobile/widgets/snack_bar.dart';
-import 'package:sassy_mobile/widgets/text_input_field.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
+import 'package:fronthaus/widgets/snack_bar.dart';
+import 'package:fronthaus/widgets/text_input_field.dart';
 
 class VerificationCode extends StatefulWidget {
   const VerificationCode({Key? key}) : super(key: key);

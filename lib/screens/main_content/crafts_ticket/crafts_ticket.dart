@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
-import 'package:sassy_mobile/widgets/custom_bottom_nav_bar.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
+import 'package:fronthaus/widgets/custom_bottom_nav_bar.dart';
 import './components/body.dart';
-import 'package:sassy_mobile/screens/main_home/components/body.dart';
+import 'package:fronthaus/screens/main_home/components/body.dart';
 
 class CraftsTicketPage extends StatefulWidget {
   const CraftsTicketPage({Key? key}) : super(key: key);

@@ -2,9 +2,9 @@ import 'package:date_count_down/date_count_down.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_countdown_timer/flutter_countdown_timer.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/event_provider.dart';
-import 'package:sassy_mobile/widgets/custom_card.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/event_provider.dart';
+import 'package:fronthaus/widgets/custom_card.dart';
 
 class Countdown extends StatelessWidget {
   const Countdown({

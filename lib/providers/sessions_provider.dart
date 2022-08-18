@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/sevices/api.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/sevices/api.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class SessionsProvider with ChangeNotifier {

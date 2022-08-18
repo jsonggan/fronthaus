@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/screens/main_home/main_home.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/screens/main_home/main_home.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
 
 class InputData extends StatefulWidget {
   const InputData({

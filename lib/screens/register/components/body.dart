@@ -1,21 +1,21 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_country.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_profession.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_salutation.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
-import 'package:sassy_mobile/providers/sponsors_provider.dart';
-import 'package:sassy_mobile/providers/user_provider.dart';
-import 'package:sassy_mobile/screens/main_home/main_home.dart';
-import 'package:sassy_mobile/widgets/custom_card.dart';
-import 'package:sassy_mobile/widgets/dropdown.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
-import 'package:sassy_mobile/widgets/snack_bar.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/providers/select_dropdown/select_country.dart';
+import 'package:fronthaus/providers/select_dropdown/select_profession.dart';
+import 'package:fronthaus/providers/select_dropdown/select_salutation.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
+import 'package:fronthaus/providers/sponsors_provider.dart';
+import 'package:fronthaus/providers/user_provider.dart';
+import 'package:fronthaus/screens/main_home/main_home.dart';
+import 'package:fronthaus/widgets/custom_card.dart';
+import 'package:fronthaus/widgets/dropdown.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
+import 'package:fronthaus/widgets/snack_bar.dart';
 import 'input_data.dart';
-import 'package:sassy_mobile/widgets/text_input_field.dart';
+import 'package:fronthaus/widgets/text_input_field.dart';
 import 'package:image/image.dart' as Img;
 
 class Register extends StatefulWidget {

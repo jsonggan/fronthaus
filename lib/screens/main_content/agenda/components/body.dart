@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/agenda_provider.dart';
-import 'package:sassy_mobile/providers/event_provider.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/screens/main_content/agenda/components/date_button.dart';
-import 'package:sassy_mobile/screens/main_content/agenda/components/track_button.dart';
-import 'package:sassy_mobile/screens/main_content/book_session/book_session.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/agenda_provider.dart';
+import 'package:fronthaus/providers/event_provider.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/screens/main_content/agenda/components/date_button.dart';
+import 'package:fronthaus/screens/main_content/agenda/components/track_button.dart';
+import 'package:fronthaus/screens/main_content/book_session/book_session.dart';
 import 'package:expandable/expandable.dart';
-import 'package:sassy_mobile/screens/main_content/sessions/sessions.dart';
+import 'package:fronthaus/screens/main_content/sessions/sessions.dart';
 
 class Agenda extends StatefulWidget {
   const Agenda({Key? key}) : super(key: key);

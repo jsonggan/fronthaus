@@ -2,14 +2,14 @@ import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/screens/verification_code/verification_code.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/screens/verification_code/verification_code.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
 import 'package:email_validator/email_validator.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
-import 'package:sassy_mobile/widgets/snack_bar.dart';
-import 'package:sassy_mobile/widgets/text_input_field.dart';
+import 'package:fronthaus/widgets/snack_bar.dart';
+import 'package:fronthaus/widgets/text_input_field.dart';
 
 class SignInEmail extends StatefulWidget {
   const SignInEmail({Key? key}) : super(key: key);

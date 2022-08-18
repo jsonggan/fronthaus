@@ -1,10 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/event_provider.dart';
-import 'package:sassy_mobile/providers/map_provider.dart';
-// import 'package:sassy_mobile/models/app_theme.dart';
-// import 'package:sassy_mobile/main.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/event_provider.dart';
+import 'package:fronthaus/providers/map_provider.dart';
+// import 'package:fronthaus/models/app_theme.dart';
+// import 'package:fronthaus/main.dart';
 
 class Map extends StatefulWidget {
   const Map({Key? key}) : super(key: key);

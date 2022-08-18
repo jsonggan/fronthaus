@@ -1,8 +1,8 @@
 import 'dart:ffi';
 
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-//import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+//import 'package:fronthaus/widgets/custom_button.dart';
 
 class CustomButton extends StatefulWidget {
   const CustomButton({

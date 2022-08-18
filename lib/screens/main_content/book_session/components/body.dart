@@ -4,10 +4,10 @@ import 'package:flutter/src/foundation/key.dart';
 import 'package:flutter/src/widgets/framework.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/screens/main_content/book_session/components/book_now_button.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/screens/main_content/book_session/components/book_now_button.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
 import 'bottom_sheet.dart';
 import 'draggable_card.dart';
 

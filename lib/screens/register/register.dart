@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_country.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_gender.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_picture.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_salutation.dart';
-import 'package:sassy_mobile/screens/register/components/body.dart';
-import 'package:sassy_mobile/screens/register/components/body.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/providers/select_dropdown/select_country.dart';
+import 'package:fronthaus/providers/select_dropdown/select_gender.dart';
+import 'package:fronthaus/providers/select_dropdown/select_picture.dart';
+import 'package:fronthaus/providers/select_dropdown/select_salutation.dart';
+import 'package:fronthaus/screens/register/components/body.dart';
+import 'package:fronthaus/screens/register/components/body.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
 
 class RegisterPage extends StatelessWidget {
   static String routeName = '/register_profile';

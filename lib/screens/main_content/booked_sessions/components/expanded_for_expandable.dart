@@ -4,9 +4,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
 
 class ExpandedForExpandable extends StatefulWidget {
   int index;

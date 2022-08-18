@@ -1,11 +1,11 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/screens/main_content/edit_profile/edit_profile.dart';
-import 'package:sassy_mobile/screens/main_content/qr_code/qr_code.dart';
-import 'package:sassy_mobile/screens/sign_in/sign_in.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/screens/main_content/edit_profile/edit_profile.dart';
+import 'package:fronthaus/screens/main_content/qr_code/qr_code.dart';
+import 'package:fronthaus/screens/sign_in/sign_in.dart';
 import 'components/body.dart';
 
 class SpeakerProfilePage extends StatelessWidget {

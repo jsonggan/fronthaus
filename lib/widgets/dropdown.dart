@@ -4,12 +4,12 @@ import 'package:flutter/material.dart';
 import 'package:dropdown_button2/dropdown_button2.dart';
 import 'package:flutter_svg/svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_country.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_event_name.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_gender.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_profession.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_salutation.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/select_dropdown/select_country.dart';
+import 'package:fronthaus/providers/select_dropdown/select_event_name.dart';
+import 'package:fronthaus/providers/select_dropdown/select_gender.dart';
+import 'package:fronthaus/providers/select_dropdown/select_profession.dart';
+import 'package:fronthaus/providers/select_dropdown/select_salutation.dart';
 
 class DropDown extends StatefulWidget {
   List items;

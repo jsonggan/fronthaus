@@ -2,8 +2,8 @@ import 'package:flutter/material.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sponsors_provider.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sponsors_provider.dart';
 
 // class SponsorsGridView extends StatefulWidget {
 //   const SponsorsGridView({Key? key}) : super(key: key);

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
-import 'package:sassy_mobile/widgets/custom_bottom_nav_bar.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
+import 'package:fronthaus/widgets/custom_bottom_nav_bar.dart';
 import './components/body.dart';
 
 class BookSessionsPage extends StatelessWidget {

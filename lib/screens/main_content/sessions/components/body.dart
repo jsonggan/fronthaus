@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/screens/main_content/book_session/book_session.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/screens/main_content/book_session/book_session.dart';
 
 class Sessions extends StatefulWidget {
   Sessions({
@@ -194,8 +194,7 @@ class _SessionsState extends State<Sessions> {
           ? 'No speaker(s) for selected session.'
           : mapSession['result']['speakers'][0]['profile_picture_url']);
       print('CHECKKKKKKKKKKKKKKKKKKKK THISSSS');
-      print(mapSession['result']
-                  ['speakers'] ==
+      print(mapSession['result']['speakers'] ==
               'No speaker(s) for selected session.'
           ? 'No speaker(s) for selected session.'
           : mapSession['result']['speakers'][0]['profile_picture_url']);

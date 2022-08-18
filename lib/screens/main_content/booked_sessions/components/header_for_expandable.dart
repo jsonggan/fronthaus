@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
 
 class HeaderForExpandable extends StatelessWidget {
   int index;

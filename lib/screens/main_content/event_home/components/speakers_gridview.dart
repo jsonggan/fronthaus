@@ -1,7 +1,7 @@
 // import 'package:flutter/material.dart';
-// import 'package:sassy_mobile/app_theme.dart';
-// import 'package:sassy_mobile/screens/main_content/event_home/components/layout_grid_child.dart';
-// import 'package:sassy_mobile/screens/main_content/sponsors/components/body.dart';
+// import 'package:fronthaus/app_theme.dart';
+// import 'package:fronthaus/screens/main_content/event_home/components/layout_grid_child.dart';
+// import 'package:fronthaus/screens/main_content/sponsors/components/body.dart';
 // import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 
 // class SpeakersGridView extends StatelessWidget {
@@ -49,9 +49,9 @@ import 'package:flutter/material.dart';
 import 'package:flutter_layout_grid/flutter_layout_grid.dart';
 import 'package:flutter_svg/flutter_svg.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
-import 'package:sassy_mobile/providers/sponsors_provider.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
+import 'package:fronthaus/providers/sponsors_provider.dart';
 
 class SpeakersGridView extends StatefulWidget {
   const SpeakersGridView({Key? key}) : super(key: key);

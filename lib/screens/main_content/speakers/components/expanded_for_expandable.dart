@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
 
 class ExpandedForExpandable extends StatefulWidget {
   int index;

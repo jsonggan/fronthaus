@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/screens/main_content/attendees/trip.dart';
-import 'package:sassy_mobile/app_theme.dart';
-// import 'package:sassy_mobile/models/app_theme.dart';
-// import 'package:sassy_mobile/main.dart';
+import 'package:fronthaus/screens/main_content/attendees/trip.dart';
+import 'package:fronthaus/app_theme.dart';
+// import 'package:fronthaus/models/app_theme.dart';
+// import 'package:fronthaus/main.dart';
 
 // class Attendees extends StatelessWidget {
 //   Attendees({

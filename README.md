@@ -1,4 +1,4 @@
-# sassy_mobile
+# fronthaus
 
 Use this file to initialize a flutter app.
 
@@ -6,7 +6,7 @@ Use this file to initialize a flutter app.
 
 ### 1. Change project name.
 
-- use Ctrl + Shift + H, replace sassy_mobile by [yourNewProjectName] (for Visual Studio Code user)
+- use Ctrl + Shift + H, replace fronthaus by [yourNewProjectName] (for Visual Studio Code user)
 
 ## File Description
 

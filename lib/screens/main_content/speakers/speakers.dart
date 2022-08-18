@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/screens/main_content/speakers/components/body.dart';
-import 'package:sassy_mobile/screens/sign_in/components/body.dart';
-import 'package:sassy_mobile/widgets/custom_appbar.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/screens/main_content/speakers/components/body.dart';
+import 'package:fronthaus/screens/sign_in/components/body.dart';
+import 'package:fronthaus/widgets/custom_appbar.dart';
 
 class SpeakersPage extends StatelessWidget {
   static String routeName = '/speaker_page';

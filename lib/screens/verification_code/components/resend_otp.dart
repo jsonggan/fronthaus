@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_svg/flutter_svg.dart';
-import 'package:sassy_mobile/app_theme.dart';
+import 'package:fronthaus/app_theme.dart';
 
 class ResendOtp extends StatelessWidget {
   const ResendOtp({

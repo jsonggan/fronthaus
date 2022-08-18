@@ -1,9 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/user_provider.dart';
-import 'package:sassy_mobile/screens/main_content/qr_code/qr_code.dart';
-import 'package:sassy_mobile/widgets/custom_button.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/user_provider.dart';
+import 'package:fronthaus/screens/main_content/qr_code/qr_code.dart';
+import 'package:fronthaus/widgets/custom_button.dart';
 
 class Profile extends StatelessWidget {
   const Profile({Key? key}) : super(key: key);

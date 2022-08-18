@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/screens/sign_in/components/body.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/screens/sign_in/components/body.dart';
 
 class SignInPage extends StatelessWidget {
   static String routeName = '/sign_in_page';

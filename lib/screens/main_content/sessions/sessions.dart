@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/providers/sessions_provider.dart';
-import 'package:sassy_mobile/screens/main_content/booked_sessions/booked_sessions.dart';
-import 'package:sassy_mobile/screens/main_content/sessions/components/body.dart';
+import 'package:fronthaus/providers/sessions_provider.dart';
+import 'package:fronthaus/screens/main_content/booked_sessions/booked_sessions.dart';
+import 'package:fronthaus/screens/main_content/sessions/components/body.dart';
 import 'package:flutter_svg/svg.dart';
 
 class SessionsPage extends StatelessWidget {

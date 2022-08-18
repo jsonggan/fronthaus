@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/widgets/custom_bottom_nav_bar.dart';
+import 'package:fronthaus/widgets/custom_bottom_nav_bar.dart';
 import './components/body.dart';
 
 class MapPage extends StatelessWidget {

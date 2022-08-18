@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:sassy_mobile/sevices/api.dart';
+import 'package:fronthaus/sevices/api.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 
 class AuthProvider extends ChangeNotifier {

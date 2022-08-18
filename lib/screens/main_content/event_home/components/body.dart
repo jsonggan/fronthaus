@@ -1,16 +1,16 @@
 import 'package:date_count_down/date_count_down.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:sassy_mobile/app_theme.dart';
-import 'package:sassy_mobile/providers/auth_provider.dart';
-import 'package:sassy_mobile/providers/event_provider.dart';
-import 'package:sassy_mobile/providers/select_dropdown/select_event_name.dart';
-import 'package:sassy_mobile/providers/speakers_provider.dart';
-import 'package:sassy_mobile/providers/sponsors_provider.dart';
-import 'package:sassy_mobile/screens/main_content/event_home/components/speakers_gridview.dart';
-import 'package:sassy_mobile/screens/main_content/event_home/components/sponsors_gridview.dart';
-import 'package:sassy_mobile/screens/main_content/speakers/speakers.dart';
-import 'package:sassy_mobile/screens/main_content/sponsors/sponsors.dart';
+import 'package:fronthaus/app_theme.dart';
+import 'package:fronthaus/providers/auth_provider.dart';
+import 'package:fronthaus/providers/event_provider.dart';
+import 'package:fronthaus/providers/select_dropdown/select_event_name.dart';
+import 'package:fronthaus/providers/speakers_provider.dart';
+import 'package:fronthaus/providers/sponsors_provider.dart';
+import 'package:fronthaus/screens/main_content/event_home/components/speakers_gridview.dart';
+import 'package:fronthaus/screens/main_content/event_home/components/sponsors_gridview.dart';
+import 'package:fronthaus/screens/main_content/speakers/speakers.dart';
+import 'package:fronthaus/screens/main_content/sponsors/sponsors.dart';
 import 'countdown.dart';
 
 class EventHome extends StatefulWidget {
