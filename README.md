@@ -8,6 +8,12 @@ Use this file to initialize a flutter app.
 
 - use Ctrl + Shift + H, replace fronthaus by [yourNewProjectName] (for Visual Studio Code user)
 
+### 2. Change package name & app name
+
+- flutter pub global activate rename
+- flutter pub global run rename --bundleId com.HelloHolo.[yourProjectName]
+- flutter pub global run rename --appname [yourAppName]
+
 ## File Description
 
 ### 1. Save all images/icons/fonts under asset folder

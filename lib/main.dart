@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:fronthaus/app_theme.dart';
+
 import 'package:fronthaus/providers/agenda_provider.dart';
 import 'package:fronthaus/providers/auth_provider.dart';
 import 'package:fronthaus/providers/event_provider.dart';
@@ -11,12 +12,14 @@ import 'package:fronthaus/providers/speakers_provider.dart';
 import 'package:fronthaus/providers/sponsors_provider.dart';
 import 'package:fronthaus/providers/user_provider.dart';
 import 'package:fronthaus/providers/world_time_provider.dart';
+
 import 'package:fronthaus/screens/sign_in/sign_in.dart';
 import 'package:fronthaus/routes.dart';
 import 'package:provider/provider.dart';
 import 'package:shared_preferences/shared_preferences.dart';
-
-// void main() => runApp(const MyApp());
+import 'package:firebase_messaging/firebase_messaging.dart';
+import 'dart:io';
+import 'dart:async';
 
 SharedPreferences? sharedPrefs;
 
@@ -26,7 +29,11 @@ Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized(); // mandatory when awaiting on main
 
   sharedPrefs = await SharedPreferences.getInstance(); // get the prefs
-  // // do whatever you need to do with it
+  // // do whatever you need to do with it=
+
+  // const instanceID = '0cc03188-c8ce-4001-80bb-ab89bbd98329';
+  // await PusherBeams.instance.start(instanceID);
+  // await PusherBeams.instance.setDeviceInterests(['hello']);
 
   runApp(MyApp()); // rest of your app code
 }
