@@ -69,7 +69,7 @@ class _DropDownState extends State<DropDown> {
               border: Border.all(
                 color: Colors.black26,
               ),
-              color: cardColorDark,
+              color: cardColor,
             ),
             buttonElevation: 2,
             itemHeight: 55,
@@ -80,7 +80,7 @@ class _DropDownState extends State<DropDown> {
             dropdownPadding: null,
             dropdownDecoration: BoxDecoration(
               borderRadius: BorderRadius.circular(6),
-              color: cardColorDark,
+              color: cardColor,
             ),
             dropdownElevation: 8,
             scrollbarRadius: const Radius.circular(40),

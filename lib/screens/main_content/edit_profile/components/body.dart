@@ -90,7 +90,7 @@ class _EditProfileState extends State<EditProfile> {
                     CustomText(text: 'First Name'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'First Name',
                       controller: firstNameController,
                       validator: (value) {
@@ -100,7 +100,7 @@ class _EditProfileState extends State<EditProfile> {
                     CustomText(text: 'Last Name'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Last Name',
                       controller: lastNameController,
                       validator: (value) {
@@ -125,7 +125,7 @@ class _EditProfileState extends State<EditProfile> {
                     CustomText(text: 'Hospital Institution'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Hospital Institution',
                       controller: hospitalInstitutionController,
                       validator: (value) {
@@ -135,7 +135,7 @@ class _EditProfileState extends State<EditProfile> {
                     CustomText(text: 'MCR / SSN / HCN'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'MCR / SSN / HCN',
                       controller: mcrSnbNumberController,
                       validator: (value) {
@@ -152,7 +152,7 @@ class _EditProfileState extends State<EditProfile> {
                     CustomText(text: 'Dietery Restrictions'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Dietery Restrictions',
                       controller: dietaryRestrictionsController,
                       validator: (value) {
@@ -185,7 +185,7 @@ class _EditProfileState extends State<EditProfile> {
       const SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: SizedBox(
           height: 25,
           child: SpinKitThreeBounce(
@@ -256,7 +256,7 @@ class _EditProfileState extends State<EditProfile> {
           SnackBar(
             shape: StadiumBorder(),
             behavior: SnackBarBehavior.floating,
-            backgroundColor: cardColorDark,
+            backgroundColor: cardColor,
             content: Text(
                 Provider.of<UserProvider>(context, listen: false)
                     .mapUpdateParticulars['message'],

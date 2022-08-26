@@ -12,7 +12,7 @@ class CustomButton extends StatefulWidget {
     this.textColor = textColorWhite,
     this.height = 55.0,
     this.width = double.infinity,
-    this.color = blue,
+    this.color = buttonColor,
   }) : super(key: key);
   final String text;
   final Function? press;

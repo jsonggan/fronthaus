@@ -1,13 +1,8 @@
-import 'package:date_count_down/date_count_down.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:fronthaus/app_theme.dart';
-import 'package:fronthaus/providers/auth_provider.dart';
 import 'package:fronthaus/providers/event_provider.dart';
-import 'package:fronthaus/providers/select_dropdown/select_event_name.dart';
 import 'package:fronthaus/providers/speakers_provider.dart';
-import 'package:fronthaus/providers/sponsors_provider.dart';
-import 'package:fronthaus/screens/main_content/event_home/components/speakers_gridview.dart';
 import 'package:fronthaus/screens/main_content/event_home/components/sponsors_gridview.dart';
 import 'package:fronthaus/screens/main_content/speakers/speakers.dart';
 import 'package:fronthaus/screens/main_content/sponsors/sponsors.dart';
@@ -37,128 +32,118 @@ class _EventHomeState extends State<EventHome> {
 
     Map<String, dynamic> mapEvent =
         Provider.of<EventProvider>(context, listen: false).mapEvent;
-    return !Provider.of<SpeakersProvider>(context, listen: false)
-            .getSpeakersIsDone
-        ? SafeArea(
-            child: SizedBox(
-                height: 50, child: Center(child: CircularProgressIndicator())),
-          )
-        : Stack(
-            children: [
-              SizedBox(
-                width: MediaQuery.of(context).size.width,
-                child: Image.network(
-                  mapEvent['result']['event_banner_urls'][0],
-                  fit: BoxFit.contain,
-                ),
+    return Stack(
+      children: [
+        SizedBox(
+          width: MediaQuery.of(context).size.width,
+          child: Image.asset(
+            'assets/images/home_page.png',
+            fit: BoxFit.contain,
+          ),
+        ),
+        DraggableScrollableSheet(
+          initialChildSize: 0.60,
+          minChildSize: 0.60,
+          maxChildSize: 1,
+          builder: (context, controller) => Container(
+            child: Card(
+              color: backGroundColor,
+              margin: EdgeInsets.zero,
+              shape: RoundedRectangleBorder(
+                borderRadius: BorderRadius.vertical(top: Radius.circular(20)),
               ),
-              DraggableScrollableSheet(
-                initialChildSize: 0.70,
-                minChildSize: 0.70,
-                maxChildSize: 1,
-                builder: (context, controller) => Container(
-                  child: Card(
-                    margin: EdgeInsets.zero,
-                    shape: RoundedRectangleBorder(
-                      borderRadius:
-                          BorderRadius.vertical(top: Radius.circular(20)),
-                    ),
-                    child: ListView(
-                      physics: BouncingScrollPhysics(),
-                      padding: EdgeInsets.only(
-                          top: 35,
-                          left: horizontalPadding,
-                          right: horizontalPadding),
-                      controller: controller,
-                      children: <Widget>[
-                        Padding(
-                          padding: const EdgeInsets.symmetric(
-                              horizontal: 25, vertical: 18),
-                          child: Image.network(
-                            mapEvent['result']['event_logo_url'],
-                            fit: BoxFit.fill,
-                            // height: 128.0,
-                            // width: 128.0,
-                          ),
-                        ),
-                        Padding(
-                          padding: const EdgeInsets.symmetric(vertical: 33),
-                          child: Center(
-                              child: Text(mapEvent['result']['description'],
-                                  textAlign: TextAlign.center,
-                                  style: Theme.of(context)
-                                      .textTheme
-                                      .bodyMedium!
-                                      .copyWith(
-                                        height: 1.5,
-                                      ))),
-                        ),
-                        Countdown(),
-                        // Padding(
-                        //   padding: const EdgeInsets.only(top: 30, bottom: 23),
-                        //   child: Text('Key Speakers',
-                        //       style: Theme.of(context).textTheme.titleLarge),
-                        // ),
-                        // HomePageGestureDetector(
-                        //     routeName: SpeakersPage.routeName,
-                        //     child: SpeakersGridView()),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30, bottom: 23),
-                          child: Text('Key Sponsors',
-                              style: Theme.of(context).textTheme.titleLarge),
-                        ),
-                        HomePageGestureDetector(
-                            routeName: SponsorsPage.routeName,
-                            child: SponsorsGridView()),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30, bottom: 23),
-                          child: Text('Organised By',
-                              style: Theme.of(context).textTheme.titleLarge),
-                        ),
-                        SizedBox(
-                          height: 300,
-                          child: Row(
-                            children: [
-                              SizedBox(
-                                  width: MediaQuery.of(context).size.width / 2 -
-                                      horizontalPadding,
-                                  child: Image.asset('assets/images/SRS.png')),
-                              SizedBox(
-                                  width: MediaQuery.of(context).size.width / 2 -
-                                      horizontalPadding,
-                                  child: Image.asset('assets/images/CRS.png')),
-                            ],
-                          ),
-                        ),
-
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30, bottom: 23),
-                          child: Text('Held In',
-                              style: Theme.of(context).textTheme.titleLarge),
-                        ),
-                        Image.asset('assets/images/SG.png'),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30, bottom: 23),
-                          child: Text('Supported By',
-                              style: Theme.of(context).textTheme.titleLarge),
-                        ),
-                        Image.asset('assets/images/SECB.png'),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 30, bottom: 23),
-                          child: Text('Official Airline',
-                              style: Theme.of(context).textTheme.titleLarge),
-                        ),
-                        Image.asset('assets/images/SQ.png'),
-                        SizedBox(
-                          height: 30,
-                        )
-                      ],
+              child: ListView(
+                physics: BouncingScrollPhysics(),
+                padding: EdgeInsets.only(
+                    top: 35, left: horizontalPadding, right: horizontalPadding),
+                controller: controller,
+                children: <Widget>[
+                  Padding(
+                    padding: const EdgeInsets.symmetric(
+                        horizontal: 25, vertical: 18),
+                    child: Image.asset(
+                      'assets/images/music_festival_font.png',
+                      fit: BoxFit.fill,
+                      // height: 128.0,
+                      // width: 128.0,
                     ),
                   ),
-                ),
+                  Padding(
+                    padding: const EdgeInsets.symmetric(vertical: 33),
+                    child: Center(
+                        child: Text(lorumIpsum,
+                            textAlign: TextAlign.center,
+                            style:
+                                Theme.of(context).textTheme.bodyLarge!.copyWith(
+                                      height: 1.5,
+                                    ))),
+                  ),
+                  Countdown(),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30, bottom: 23),
+                  //   child: Text('Key Speakers',
+                  //       style: Theme.of(context).textTheme.titleLarge),
+                  // ),
+                  // HomePageGestureDetector(
+                  //     routeName: SpeakersPage.routeName,
+                  //     child: SpeakersGridView()),
+                  Padding(
+                    padding: const EdgeInsets.only(top: 30, bottom: 23),
+                    child: Text('Key Sponsors',
+                        style: Theme.of(context).textTheme.titleLarge),
+                  ),
+                  HomePageGestureDetector(
+                      routeName: SponsorsPage.routeName,
+                      child: SponsorsGridView()),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30, bottom: 23),
+                  //   child: Text('Organised By',
+                  //       style: Theme.of(context).textTheme.titleLarge),
+                  // ),
+                  // SizedBox(
+                  //   height: 300,
+                  //   child: Row(
+                  //     children: [
+                  //       SizedBox(
+                  //           width: MediaQuery.of(context).size.width / 2 -
+                  //               horizontalPadding,
+                  //           child: Image.asset('assets/images/SRS.png')),
+                  //       SizedBox(
+                  //           width: MediaQuery.of(context).size.width / 2 -
+                  //               horizontalPadding,
+                  //           child: Image.asset('assets/images/CRS.png')),
+                  //     ],
+                  //   ),
+                  // ),
+
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30, bottom: 23),
+                  //   child: Text('Held In',
+                  //       style: Theme.of(context).textTheme.titleLarge),
+                  // ),
+                  // Image.asset('assets/images/SG.png'),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30, bottom: 23),
+                  //   child: Text('Supported By',
+                  //       style: Theme.of(context).textTheme.titleLarge),
+                  // ),
+                  // Image.asset('assets/images/SECB.png'),
+                  // Padding(
+                  //   padding: const EdgeInsets.only(top: 30, bottom: 23),
+                  //   child: Text('Official Airline',
+                  //       style: Theme.of(context).textTheme.titleLarge),
+                  // ),
+                  // Image.asset('assets/images/SQ.png'),
+                  SizedBox(
+                    height: 30,
+                  )
+                ],
               ),
-            ],
-          );
+            ),
+          ),
+        ),
+      ],
+    );
   }
 }
 

@@ -173,7 +173,7 @@ class _NumInputFieldState extends State<NumInputField> {
       // ),
 
       // enabledBorder: OutlineInputBorder(),
-      fillColor: cardColorDark,
+      fillColor: cardColor,
       filled: true,
     );
   }

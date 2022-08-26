@@ -36,8 +36,8 @@ class _SignInEmailState extends State<SignInEmail> {
               const Spacer(flex: 8),
               Center(
                   child: Container(
-                      width: MediaQuery.of(context).size.width / 2.5,
-                      child: Image.asset('assets/images/enm_events.png'))),
+                      width: MediaQuery.of(context).size.width / 2.0,
+                      child: Image.asset('assets/images/fronthaus_logo.png'))),
               const Spacer(flex: 4),
               TextInputField(
                 validator: (value) {
@@ -53,7 +53,6 @@ class _SignInEmailState extends State<SignInEmail> {
               ),
               const Spacer(flex: 1),
               CustomButton(
-                color: yellowCardColor,
                 text: "Next",
                 press: !_isPress
                     ? () {

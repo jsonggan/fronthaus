@@ -107,7 +107,7 @@ class _ExpandedForExpandableState extends State<ExpandedForExpandable> {
       const SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: SizedBox(
           height: 25,
           child: SpinKitThreeBounce(
@@ -139,7 +139,7 @@ class _ExpandedForExpandableState extends State<ExpandedForExpandable> {
       SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: Text(
             Provider.of<SessionsProvider>(context, listen: false)
                 .mapcancelPackageBooking['message'],

@@ -95,7 +95,7 @@ class _RegisterState extends State<Register> {
                     CustomText(text: 'First Name'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'First Name',
                       controller: firstNameController,
                       validator: (value) {
@@ -108,7 +108,7 @@ class _RegisterState extends State<Register> {
                     CustomText(text: 'Last Name'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Last Name',
                       controller: lastNameController,
                       validator: (value) {
@@ -119,7 +119,7 @@ class _RegisterState extends State<Register> {
                     ),
                     CustomText(text: 'Email'),
                     CustomCard(
-                        color: cardColorLight,
+                        color: cardColor,
                         child: Padding(
                           padding: const EdgeInsets.symmetric(
                               vertical: 18, horizontal: 12),
@@ -173,7 +173,7 @@ class _RegisterState extends State<Register> {
                     CustomText(text: 'Hospital Institution'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Hospital Institution',
                       controller: hospitalInstitutionController,
                       validator: (value) {},
@@ -181,7 +181,7 @@ class _RegisterState extends State<Register> {
                     CustomText(text: 'MCR / SSN / HCN'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'MCR / SSN / HCN',
                       controller: mcrSnbNumberController,
                       validator: (value) {},
@@ -210,7 +210,7 @@ class _RegisterState extends State<Register> {
                     CustomText(text: 'Dietery Restrictions'),
                     TextInputField(
                       textColor: textColorGrey,
-                      color: cardColorLight,
+                      color: cardColor,
                       type: 'Dietery Restrictions',
                       controller: dietaryRestrictionsController,
                       validator: (value) {},

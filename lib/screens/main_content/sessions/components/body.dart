@@ -156,7 +156,7 @@ class _SessionsState extends State<Sessions> {
       const SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: SizedBox(
           height: 25,
           child: SpinKitThreeBounce(

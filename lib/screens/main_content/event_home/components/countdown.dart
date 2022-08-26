@@ -21,12 +21,12 @@ class Countdown extends StatelessWidget {
         child:
             Column(mainAxisAlignment: MainAxisAlignment.spaceAround, children: [
           Text('The Event Begins In',
-              style: Theme.of(context).textTheme.bodyMedium),
+              style: Theme.of(context).textTheme.bodyLarge),
           SizedBox(height: 13),
           CountdownTimer(
             // 2022-08-12T00:30:00.000000Z
             // mapEvent['result']['datetime_start']
-            endTime: DateTime.parse(mapEvent['result']['datetime_start'])
+            endTime: DateTime.parse('2023-08-12T00:30:00.000000Z')
                 .millisecondsSinceEpoch,
             widgetBuilder: (_, time) {
               if (time == null) {
@@ -36,11 +36,11 @@ class Countdown extends StatelessWidget {
                       child: Column(
                         children: [
                           Text('00',
-                              style: Theme.of(context).textTheme.titleMedium),
+                              style: Theme.of(context).textTheme.titleLarge),
                           Center(
                               child: Text('Days',
                                   style:
-                                      Theme.of(context).textTheme.bodyMedium)),
+                                      Theme.of(context).textTheme.bodyLarge)),
                         ],
                       ),
                     ),
@@ -48,10 +48,10 @@ class Countdown extends StatelessWidget {
                       child: Column(
                         children: [
                           Text('00',
-                              style: Theme.of(context).textTheme.titleMedium),
+                              style: Theme.of(context).textTheme.titleLarge),
                           Center(
                             child: Text('Hours',
-                                style: Theme.of(context).textTheme.bodyMedium),
+                                style: Theme.of(context).textTheme.bodyLarge),
                           ),
                         ],
                       ),
@@ -60,10 +60,10 @@ class Countdown extends StatelessWidget {
                       child: Column(
                         children: [
                           Text('00',
-                              style: Theme.of(context).textTheme.titleMedium),
+                              style: Theme.of(context).textTheme.titleLarge),
                           Center(
                             child: Text('Minutes',
-                                style: Theme.of(context).textTheme.bodyMedium),
+                                style: Theme.of(context).textTheme.bodyLarge),
                           ),
                         ],
                       ),
@@ -72,10 +72,10 @@ class Countdown extends StatelessWidget {
                       child: Column(
                         children: [
                           Text('00',
-                              style: Theme.of(context).textTheme.titleMedium),
+                              style: Theme.of(context).textTheme.titleLarge),
                           Center(
                             child: Text('Seconds',
-                                style: Theme.of(context).textTheme.bodyMedium),
+                                style: Theme.of(context).textTheme.bodyLarge),
                           ),
                         ],
                       ),
@@ -97,7 +97,7 @@ class Countdown extends StatelessWidget {
                             style: Theme.of(context).textTheme.titleMedium),
                         Center(
                             child: Text('Days',
-                                style: Theme.of(context).textTheme.bodyMedium)),
+                                style: Theme.of(context).textTheme.bodyLarge)),
                       ],
                     ),
                   ),
@@ -113,7 +113,7 @@ class Countdown extends StatelessWidget {
                             style: Theme.of(context).textTheme.titleMedium),
                         Center(
                           child: Text('Hours',
-                              style: Theme.of(context).textTheme.bodyMedium),
+                              style: Theme.of(context).textTheme.bodyLarge),
                         ),
                       ],
                     ),
@@ -128,7 +128,7 @@ class Countdown extends StatelessWidget {
                             style: Theme.of(context).textTheme.titleMedium),
                         Center(
                           child: Text('Minutes',
-                              style: Theme.of(context).textTheme.bodyMedium),
+                              style: Theme.of(context).textTheme.bodyLarge),
                         ),
                       ],
                     ),
@@ -145,7 +145,7 @@ class Countdown extends StatelessWidget {
                             style: Theme.of(context).textTheme.titleMedium),
                         Center(
                           child: Text('Seconds',
-                              style: Theme.of(context).textTheme.bodyMedium),
+                              style: Theme.of(context).textTheme.bodyLarge),
                         ),
                       ],
                     ),

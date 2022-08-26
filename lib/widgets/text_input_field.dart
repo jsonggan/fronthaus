@@ -14,7 +14,7 @@ class TextInputField extends StatelessWidget {
     required this.type,
     required this.controller,
     required this.validator,
-    this.color = cardColorDark,
+    this.color = cardColor,
     this.textColor = textColorWhite,
     this.keyboard = TextInputType.emailAddress,
   }) : super(key: key);

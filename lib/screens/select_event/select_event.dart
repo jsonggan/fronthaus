@@ -8,7 +8,7 @@ class SelectEventPage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: backGroundColorBlack,
+      backgroundColor: backGroundColor,
       appBar: CustomTopAppBarWhiteIcon(),
       body: Container(
         child: SelectEvent(),

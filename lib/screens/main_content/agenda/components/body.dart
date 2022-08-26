@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_spinkit/flutter_spinkit.dart';
+import 'package:fronthaus/widgets/snack_bar.dart';
 import 'package:provider/provider.dart';
 import 'package:fronthaus/app_theme.dart';
 import 'package:fronthaus/providers/agenda_provider.dart';
@@ -366,21 +367,7 @@ class _AgendaState extends State<Agenda> {
 
   Future<void> sessionDetail(String sessionId, String sessionsIdLast,
       String event, String category) async {
-    ScaffoldMessenger.of(context).showSnackBar(
-      const SnackBar(
-        shape: StadiumBorder(),
-        behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
-        content: SizedBox(
-          height: 25,
-          child: SpinKitThreeBounce(
-            size: 13,
-            color: textColorWhite,
-          ),
-        ),
-        duration: Duration(seconds: 15),
-      ),
-    );
+    CustomSnackBar.showLoading(context);
     SessionsProvider providerSessions =
         Provider.of<SessionsProvider>(context, listen: false);
     providerSessions.initialForSessionDescription();

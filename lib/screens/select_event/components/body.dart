@@ -61,7 +61,7 @@ class _SelectEventState extends State<SelectEvent> {
               isSelect:
                   Provider.of<SelectEventName>(context, listen: false).isSelect,
               fieldText: Provider.of<SelectEventName>(context).eventName,
-              color: cardColorDark,
+              color: cardColor,
               textColor: textColorGreyLight,
               textColorItem: textColorWhite,
             ),
@@ -85,7 +85,6 @@ class _SelectEventState extends State<SelectEvent> {
             ),
             const Spacer(flex: 25),
             CustomButton(
-                color: yellowCardColor,
                 text: "Continue",
                 press: !_isPress
                     ? () {

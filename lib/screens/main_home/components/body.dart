@@ -41,59 +41,17 @@ class MainHomeState extends State<MainHome> {
 
   @override
   Widget build(BuildContext context) {
-    return !Provider.of<EventProvider>(context).getEventIsDone
-        ? SizedBox(
-            height: 50,
-            child: Center(
-                child: SpinKitThreeBounce(
-              size: 13,
-              color: textColorWhite,
-            )))
-        : !Provider.of<UserProvider>(context).showParticularsIsDoneForFirstTime
-            ? SizedBox(
-                height: 50,
-                child: Center(
-                    child: SpinKitThreeBounce(
-                  size: 13,
-                  color: textColorWhite,
-                )))
-            : Provider.of<EventProvider>(context).errorMsg == 'Unauthenticated.'
-                ? SignInPage()
-                : Provider.of<UserProvider>(context)
-                                .mapShowParticulars['results']
-                            ['dietary_restrictions'] ==
-                        null
-                    ? SignInPage()
-                    : ScaffoldMessenger(
-                        child: Scaffold(
-                          backgroundColor:
-                              !Provider.of<SpeakersProvider>(context)
-                                      .getSpeakersIsDoneForFirstTime
-                                  ? backGroundColorBlack
-                                  : backGroundColor,
-                          body: !Provider.of<SpeakersProvider>(context,
-                                      listen: false)
-                                  .getSpeakersIsDoneForFirstTime
-                              ? SizedBox(
-                                  height: MediaQuery.of(context).size.height,
-                                  child: Center(
-                                      child: SpinKitThreeBounce(
-                                    size: 13,
-                                    color: textColorWhite,
-                                  )))
-                              : currentIndex == 0 || currentIndex == 3
-                                  ? screens[currentIndex]
-                                  : SafeArea(child: screens[currentIndex]),
+    return ScaffoldMessenger(
+      child: Scaffold(
+        backgroundColor: backGroundColor,
+        body: currentIndex == 0 || currentIndex == 3
+            ? screens[currentIndex]
+            : SafeArea(child: screens[currentIndex]),
 
-                          // backgroundColor: backGroundColor,
-                          bottomNavigationBar: !Provider.of<SpeakersProvider>(
-                                      context,
-                                      listen: false)
-                                  .getSpeakersIsDoneForFirstTime
-                              ? null
-                              : bottomAppBar(),
-                        ),
-                      );
+        // backgroundColor: backGroundColor,
+        bottomNavigationBar: bottomAppBar(),
+      ),
+    );
   }
 
   //control bottom app bar

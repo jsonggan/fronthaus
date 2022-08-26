@@ -16,7 +16,7 @@ class CustomSnackBar {
       const SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: SizedBox(
           height: 25,
           child: SpinKitThreeBounce(
@@ -37,7 +37,7 @@ class CustomSnackBar {
       SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: Text(text,
             style: Theme.of(context)
                 .textTheme

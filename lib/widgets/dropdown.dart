@@ -26,7 +26,7 @@ class DropDown extends StatefulWidget {
     required this.text,
     required this.isSelect,
     required this.fieldText,
-    this.color = cardColorLight,
+    this.color = cardColor,
     this.textColor = textColorGreyLight,
     this.textColorItem = textColorGrey,
   }) : super(key: key);

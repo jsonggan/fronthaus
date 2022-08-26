@@ -94,7 +94,6 @@ class _VerificationCodeState extends State<VerificationCode> {
                 ),
                 Spacer(flex: 1),
                 CustomButton(
-                  color: yellowCardColor,
                   text: "Submit",
                   press: () => submit(),
                 ),

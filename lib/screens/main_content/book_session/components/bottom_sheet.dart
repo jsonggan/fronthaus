@@ -87,7 +87,7 @@ class _CustomBottomSheetState extends State<CustomBottomSheet> {
       SnackBar(
         shape: StadiumBorder(),
         behavior: SnackBarBehavior.floating,
-        backgroundColor: cardColorDark,
+        backgroundColor: cardColor,
         content: Text(mapBookPackage['message'],
             style: Theme.of(context)
                 .textTheme

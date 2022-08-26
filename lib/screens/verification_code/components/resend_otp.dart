@@ -15,7 +15,7 @@ class ResendOtp extends StatelessWidget {
             Navigator.pop(context);
           },
           child: SvgPicture.asset('assets/icons/close_white.svg')),
-      backgroundColor: backGroundColorBlack,
+      backgroundColor: backGroundColor,
     );
   }
 }

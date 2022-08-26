@@ -2,12 +2,9 @@ import 'package:flutter/material.dart';
 //import 'package:fronthaus/app_theme.dart';
 
 //color
-const bottomNavBarColor = Color(0xFFEBEBEB);
-const backGroundColor = Color(0xFFFFFFFF);
-const backGroundColorBlack = Color(0xFF1E1E1E);
-const cardColor = Color(0xFFE4E4E4);
-const cardColorDark = Color(0xFF41414F);
-const cardColorLight = Color(0xFFEDEDED);
+const bottomNavBarColor = Color(0xFF161616);
+const backGroundColor = Color(0xFF000000);
+const cardColor = Color(0xFF1D1D27);
 const tagColor = Color(0xFF414151);
 const buttonColor = Color(0xFFE0013F);
 const yellowCardColor = Color(0xFFF3B31F);
@@ -15,7 +12,7 @@ const yellowCardColor = Color(0xFFF3B31F);
 //text
 const String fontNameDefault = 'Helvatica Neue';
 const tagTextColor = Color(0xFF666666);
-const textColorMain = Color(0xFF111013);
+const textColorMain = Color(0xFFFFFFFF);
 const textColorWhite = Color(0xFFFFFFFF);
 const textColorGrey = Color(0xFF666666);
 const textColorGrey1 = Color(0xFFC3C3C3);
@@ -39,7 +36,7 @@ const body1TextStyle = TextStyle(
   fontFamily: fontNameDefault,
   fontWeight: FontWeight.w300,
   fontSize: mediumTextSize,
-  color: textColorMain,
+  color: textColorWhite,
 );
 
 const body2TextStyle = TextStyle(
@@ -53,7 +50,7 @@ const countdownTextStyle = TextStyle(
   fontFamily: fontNameDefault,
   fontWeight: FontWeight.w300,
   fontSize: countdownTextSize,
-  color: blue,
+  color: buttonColor,
 );
 
 const tagTextStyle = TextStyle(

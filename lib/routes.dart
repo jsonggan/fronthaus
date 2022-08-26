@@ -27,21 +27,22 @@ import 'package:fronthaus/screens/verification_code/verification_code.dart';
 
 final Map<String, WidgetBuilder> routes = {
   SignInPage.routeName: (context) {
-    final authProvider = Provider.of<AuthProvider>(context);
-    if (authProvider.isAuthenticated) {
-      Provider.of<SpeakersProvider>(context, listen: false).initial();
-      Provider.of<EventProvider>(context, listen: false)
-          .getEvent('', authProvider.eventCode);
-      Provider.of<UserProvider>(context, listen: false).showParticulars();
+    // final authProvider = Provider.of<AuthProvider>(context);
+    // if (authProvider.isAuthenticated) {
+    //   Provider.of<SpeakersProvider>(context, listen: false).initial();
+    //   Provider.of<EventProvider>(context, listen: false)
+    //       .getEvent('', authProvider.eventCode);
+    //   Provider.of<UserProvider>(context, listen: false).showParticulars();
 
-      //sponsors for home page
-      Provider.of<SponsorsProvider>(context, listen: false).getSponsors();
-      // speakers for home page
-      Provider.of<SpeakersProvider>(context, listen: false).getSpeakers();
-      return MainHomePage();
-    } else {
-      return SignInPage();
-    }
+    //   //sponsors for home page
+    //   Provider.of<SponsorsProvider>(context, listen: false).getSponsors();
+    //   // speakers for home page
+    //   Provider.of<SpeakersProvider>(context, listen: false).getSpeakers();
+    //   return MainHomePage();
+    // } else {
+    //   return SignInPage();
+    // }
+    return SignInPage();
   },
   RegisterPage.routeName: (context) => RegisterPage(),
   VerificationCodePage.routeName: (context) => VerificationCodePage(),

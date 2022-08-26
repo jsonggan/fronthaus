@@ -93,14 +93,10 @@ class _SponsorsGridViewState extends State<SponsorsGridView> {
     Map<String, dynamic> mapSponsors =
         Provider.of<SponsorsProvider>(context).mapSponsors;
     List listOfImage = [
-      'assets/images/Lunit.png',
-      'assets/images/Canon.png',
       'assets/images/Siemens-Healthineers.png',
       'assets/images/BD.png',
       'assets/images/Terumo.png',
       'assets/images/Astrazeneca.png',
-      'assets/images/Bayer.png',
-      'assets/images/Boston-Scientific.png',
       'assets/images/Cordis.png',
       'assets/images/GE.png',
       'assets/images/Mdetronic.png',
@@ -109,14 +105,10 @@ class _SponsorsGridViewState extends State<SponsorsGridView> {
       'assets/images/Penumbra.png',
     ];
     List listOfCompanyName = [
-      'Lunit',
-      'Canon',
       'Siemens-Healthineers',
       'BD',
       'Terumo',
       'Astrazeneca',
-      'Bayer',
-      'Boston-Scientific',
       'Cordis',
       'GE',
       'Metronic',
@@ -135,7 +127,7 @@ class _SponsorsGridViewState extends State<SponsorsGridView> {
           mainAxisSpacing: 28,
           crossAxisSpacing: 29,
         ),
-        itemCount: 14,
+        itemCount: 10,
         itemBuilder: (BuildContext context, index) {
           return MoreFeatureCard(
               imageSource: listOfImage[index], title: listOfCompanyName[index]);
